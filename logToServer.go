@@ -1,6 +1,9 @@
 package main
 
+import "fmt"
+
 func sendFakeShot(userName, msg string) error {
+	fmt.Println("sending to " + userName + " msg: " + msg)
 	return logToServer("NOTICE", userName, msg, "")
 }
 

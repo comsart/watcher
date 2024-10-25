@@ -7,8 +7,8 @@ import (
 )
 
 func terminationLoop(userName string) {
+	fmt.Println("starting termination loop")
 	eventsDumped := time.Now()
-
 	var events []string
 	for {
 		instructions, err := askServer(userName)

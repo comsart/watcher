@@ -6,6 +6,7 @@ import (
 )
 
 func screenshotingLoop(userName string) {
+	fmt.Println("starting screenshoting loop")
 	for {
 		base64, err := takeScreenshot()
 		if err != nil {
