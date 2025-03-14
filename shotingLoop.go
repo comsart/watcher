@@ -6,6 +6,8 @@ import (
 )
 
 func screenshotingLoop(userName string) {
+	// FIXME ciagle robi screenshoty wtedy kiedy angielski nie zrobiony i otwiera przymusowo przegladarke.
+	// tych screenshotow nigdzie nie wysyla, tylko slychac dzwiek migawki ze sa screenshoty robione
 	fmt.Println("starting screenshoting loop")
 	for {
 		base64, err := takeScreenshot()
