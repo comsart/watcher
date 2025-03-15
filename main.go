@@ -11,7 +11,7 @@ func main() {
 
 	if len(os.Args) == 2 {
 		param := os.Args[1]
-		_ = sendFakeShot(userName, "first param i watcher is "+param)
+		_ = sendFakeShot(userName, "first param in watcher is "+param)
 	} else {
 		_ = sendFakeShot(userName, "len of args not 2")
 	}
